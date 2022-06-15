@@ -18,4 +18,4 @@ class DateReminder(DeadlinedReminder):
     
     def __init__(self, text, date):
         self.date = parse(date, dayfirst=True)
-        
+        self.text = text
