@@ -25,7 +25,7 @@ class DateReminder(DeadlinedReminder):
         return self.date <= datetime.now()
 
     def __iter__(self):
-        return iter([self.date, self.date.isoformat()])
+        return iter([self.text, self.date.isoformat()])
 
     
             
